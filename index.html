@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andree's Window</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="window">
+    <!-- Tabs -->
+    <nav class="tabs">
+        <button class="tab active" data-target="home">home</button>
+        <button class="tab" data-target="about">about</button>
+        <button class="tab" data-target="work">work</button>
+        <button class="tab" data-target="extra">extra</button>
+        <button class="tab" data-target="contact">contact</button>
+    </nav>
+      
+
+    <!-- Content -->
+    <main class="content"> 
+
+    <!-- Tab sections -->
+    <section id="home" class="tab-section active">
+        <h3>welcome to</h3>
+        <h1>Andree’s window</h1>
+    
+        <!-- Search bar -->
+        <div class="search-bar">
+        <i class="fas fa-bars"></i>
+        <span>click the buttons below...</span>
+        <i class="fas fa-search"></i>
+        </div>
+    
+        <!-- Icons -->
+        <div class="icon-links" id="iconSection">
+        <i class="fas fa-user" data-target="about"></i>
+        <i class="fas fa-briefcase" data-target="work"></i>
+        <i class="fas fa-star" data-target="extra"></i>
+        <i class="fas fa-paper-plane" data-target="contact"></i>
+        </div>
+    </section>
+  
+    <section id="about" class="tab-section" hidden>
+        <div class="about-new-container">
+          <!-- Profile photo + Name -->
+          <div class="about-header-new">
+            <img src="biometric photo.JPG" alt="Andree photo" class="profile-pic-large" />
+            <div class="about-name">
+              <h1>Andree Eu Yeng Wong</h1>
+              <p class="subtitle">Bsc. Computer Science FH Aachen</p>
+            </div>
+          </div>
+      
+          <div class="about-description">
+            <p>heyy! I'm Andree, a student and programmer. i...</p>
+            <ul>
+              <li>come from <strong>Malaysia</strong></li>
+              <li>study in <strong>Germany</strong></li>
+              <li>can code in <span class="highlight">Python</span> & <span class="highlight">C++</span></li>
+              <li>love solving problems & building cool things</li>
+            </ul>
+          
+            <!-- Interests section -->
+            <div class="about-subsection">
+              <h3><strong>interests</strong></h3>
+              <ul>
+                <li>puzzle games</li>
+                <li>dancing</li>
+                <li>crochet</li>
+              </ul>
+            </div>
+          
+            <!-- Language proficiency section -->
+            <div class="about-subsection">
+              <h3><strong>language proficiency</strong></h3>
+              <p>
+                i speak fluent <span class="highlight">English</span> & <span class="highlight">Chinese</span>, passed my
+                <span class="highlight">German (C1)</span>, speak conversational <span class="highlight">Cantonese</span>, and
+                a bit of <span class="highlight">Malay</span>.
+              </p>
+            </div>
+          </div>
+    </section>          
+      
+    <section id="work" class="tab-section" hidden>
+        <p class="work-top-text">
+          accepting work offers via 
+          <button class="contact-link" data-target="contact">contact</button>
+        </p>
+        <hr class="work-divider" />
+        <div class="work-columns">
+          <div class="work-column">
+            <h3><strong>coding languages</strong></h3>
+            <ul>
+              <li>C++</li>
+              <li>Python</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+          <div class="work-column">
+            <h3><strong>development projects</strong></h3>
+            <ul>
+              <li>this website :D</li>
+              <li>(i’m working on some projects, will release them soon!)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section id="extra" class="tab-section" hidden>
+        <div class="extra-container">
+          <h2 class="extra-title">extracurricular activities</h2>
+          
+          <div class="extra-section">
+            <div class="extra-year">2024</div>
+            <div class="extra-content">InnovatorsWeek, Startup Village, Brainergy</div>
+          </div>
+          
+          <div class="extra-section">
+            <div class="extra-year">2022</div>
+            <div class="extra-content">Voluntary project, Orphanage</div>
+          </div>
+          
+          <div class="extra-section">
+            <div class="extra-year">2020–2021</div>
+            <div class="extra-content">Top scorer: Accounting & Combined Science (2 years)</div>
+          </div>
+          
+          <div class="extra-section">
+            <div class="extra-year">2009–2019</div>
+            <div class="extra-content">Ballet (1st–7th Grade, Intermediate Foundation)</div>
+          </div>
+          
+          <div class="extra-section">
+            <div class="extra-year">2019</div>
+            <div class="extra-content">Soloist, Istana Budaya, Malaysia</div>
+          </div>
+          
+          <div class="extra-section">
+            <div class="extra-year">2017</div>
+            <div class="extra-content">Asia Pacific Dance Competition (Group): 1st Place</div>
+          </div>
+          
+          <h2 class="extra-title">education</h2>
+          
+          <div class="extra-section">
+            <div class="extra-year">2024–Present</div>
+            <div class="extra-content">BSc Computer Science, FH Aachen</div>
+          </div>
+          
+          <div class="extra-section">
+            <div class="extra-year">2022–2023</div>
+            <div class="extra-content">
+              A Levels, Methodist College KL<br>
+              <span class="extra-subtext">Math: A*, CompSci: A, Economics: A</span>
+            </div>
+          </div>
+          
+          <div class="extra-section">
+            <div class="extra-year">2017–2021</div>
+            <div class="extra-content">
+              IGCSE, AIM Christian College<br>
+              <span class="extra-subtext">7A*, 1B</span>
+            </div>
+          </div>
+          
+          <h2 class="extra-title">certifications</h2>
+          
+          <div class="extra-section">
+            <div class="extra-year">2023</div>
+            <div class="extra-content">German DSH-2 (A1–C1)</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contact" class="tab-section" >
+        <div class="contact-container">
+          <h2 class="contact-title">get in touch</h2>
+          
+          <div class="contact-method">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div class="contact-details">
+              <p class="contact-label">email me at</p>
+              <p class="contact-info">andree0313@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-method">
+            <i class="fas fa-phone contact-icon"></i>
+            <div class="contact-details">
+              <p class="contact-label">or contact me through</p>
+              <p class="contact-info">+49 157 58224178</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
